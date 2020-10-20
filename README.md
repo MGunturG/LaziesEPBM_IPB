@@ -16,7 +16,7 @@ Kek mana cara pakenya?
 * Pilih mata kuliah yang pengen dinilai
 * Buka konsol browser, Chrome (ctrl+shift+j), Firefox (ctrl+shift+k), browser lain cari sendiri
 * Copy code yang dari github ini dan paste-kan ke konsol browser kalian
-'''javascript
+```javascript
 function laziesepbm(kesan) {
 	min = Math.ceil(kesan);
 	max = Math.floor(kesan) + 1;
@@ -57,7 +57,7 @@ function laziesepbm(kesan) {
 }
 
 laziesepbm(100,3)
-'''
+```
 * Skut
 * Kelar deh
 
