@@ -1,4 +1,4 @@
-function laziesepbm(kesan) {
+function laziesepbm(jumlah_dosen, kesan) {
 	min = Math.ceil(kesan);
 	max = Math.floor(kesan) + 1;
 	// 1 | Random 

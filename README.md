@@ -17,7 +17,7 @@ Kek mana cara pakenya?
 * Buka konsol browser, Chrome (ctrl+shift+j), Firefox (ctrl+shift+k), browser lain cari sendiri
 * Copy code yang dari github ini dan paste-kan ke konsol browser kalian
 ```javascript
-function laziesepbm(kesan) {
+function laziesepbm(jumlah_dosen, kesan) {
 	min = Math.ceil(kesan);
 	max = Math.floor(kesan) + 1;
 	// 1 | Random 
@@ -36,7 +36,7 @@ function laziesepbm(kesan) {
 	}
 
 	// Untuk ngisi form yang #JawabanDosen (penilaian dosen kuliah)
-	for (dosen = 1; dosen<=10; dosen++) {
+	for (dosen = 1; dosen<=jumlah_dosen; dosen++) {
 		formNumberDN = 38;
 		for (pertanyaan = 1; pertanyaan<=11; pertanyaan++) {
 			valueChoosen = Math.floor(Math.random() * (max - min + 1)) + min;
