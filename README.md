@@ -20,7 +20,7 @@ Kek mana cara pakenya?
 function laziesepbm(jumlah_dosen, kesan) {
 	min = Math.ceil(kesan);
 	max = Math.floor(kesan) + 1;
-	// 1 | Random 
+	// 1 | Random
 	// 2 | Tidak setuju, setuju, sangat setuju
 	// 3 | setuju, sangat setuju
 	// 4 | sangat setuju
@@ -30,7 +30,7 @@ function laziesepbm(jumlah_dosen, kesan) {
 	for (i = 0; i<10; i++) {
 		valueChoosen = Math.floor(Math.random() * (max - min + 1)) + min;
 		target = "#JawabanMK_20" + formNumberMK + valueChoosen;
-		console.log(target);
+		// console.log(target);
 		$(target).attr('checked', true);
 		formNumberMK++;
 	}
@@ -41,7 +41,7 @@ function laziesepbm(jumlah_dosen, kesan) {
 		for (pertanyaan = 1; pertanyaan<=11; pertanyaan++) {
 			valueChoosen = Math.floor(Math.random() * (max - min + 1)) + min;
 			target = "#JawabanDosen_" + dosen + pertanyaan + "20" +formNumberDN + valueChoosen;
-			console.log(target);
+			// console.log(target);
 			$(target).attr('checked', true);
 			formNumberDN++;
 		}
@@ -49,16 +49,16 @@ function laziesepbm(jumlah_dosen, kesan) {
 
 	// Checklist pernyataan
 	$("#Pernyataan").prop("checked", true);
-  	$("#mbuh").removeClass("alert alert-danger");
-  	$("#mbuh").addClass("alert alert-success");
+  $("#mbuh").removeClass("alert alert-danger");
+  $("#mbuh").addClass("alert alert-success");
 
-  	// Submit
-  	$("#save").click();
+  // Submit
+  $("#save").click();
 }
 
 laziesepbm(100,3)
 ```
-* Skut
+* Tekan "Enter"
 * Kelar deh
 
 | Kesan         | Random-Choose                         |
@@ -70,6 +70,4 @@ laziesepbm(100,3)
 Disclaimer
 ==========
 
-Gue gak bertanggungjawab kalo ada perang dunia karena lu ngisi EPBMnya asal-asalan (pake script). Resiko ditanggung pengguna bukan pembuat script. 
-
-
+Gue gak bertanggungjawab kalo ada perang dunia karena lu ngisi EPBMnya asal-asalan (pake script). Resiko ditanggung pengguna bukan pembuat script.
